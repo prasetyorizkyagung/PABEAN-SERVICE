@@ -371,7 +371,7 @@ public class PibGenerator {
 
     private List<Barang> generateBarang(String pibId, List<Document> documents, BigDecimal ndpbm) {
         List<Barang> listBarang = new ArrayList<>();
-        List<ItemDetail> detail = itemDetailDao.findByPibIdOrderByItemId(pibId);
+        List<ItemDetail> detail = itemDetailDao.findByPibIdOrderBySeri(pibId);
         int seri = 1;
         for (ItemDetail itemDetail : detail) {
             Barang barang = new Barang();
