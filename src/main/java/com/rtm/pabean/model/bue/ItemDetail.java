@@ -27,6 +27,7 @@ public class ItemDetail {
     private BigDecimal unitPrice, numberUnit, fob, netto, volume, palmValue, standardPrice, ndpbm;
     @Column(name = "is_lartas")
     private boolean lartas;
+    private int seri;
 
     public ItemDetail() {
         this.itemId = UUID.randomUUID().toString();
