@@ -274,6 +274,7 @@ public class BueParser {
             itemDetail.setUnitPrice(tblPebDtl.getFobPerSat());
             itemDetail.setVolume(tblPebDtl.getdVolume());
             itemDetail.setPackageType(tblPebDtl.getJnKoli());
+            itemDetail.setSeri(tblPebDtl.getSeriBrg().intValue());
             itemDetail.setPebId(pebId);
             itemDetails.add(itemDetail);
             itemDetailDao.save(itemDetail);
