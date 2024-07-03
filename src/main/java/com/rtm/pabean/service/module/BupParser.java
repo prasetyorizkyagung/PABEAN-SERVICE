@@ -390,6 +390,7 @@ public class BupParser {
             itemDetail.setPackageType(tblPibDtl.getKemasJn());
             itemDetail.setType(Optional.ofNullable(tblPibDtl.getTipe()).orElse("").trim());
             itemDetail.setOtherSpecification(Optional.ofNullable(tblPibDtl.getSpfLain()).orElse("").trim());
+            itemDetail.setSeri(tblPibDtl.getSerial().intValue());
             itemDocuments.addAll(getItemDocument(documents, tblPibDtl.getSerial().intValue(), itemDetail.getItemId(), tblPibDtlDoks));
             VdItem vdItem = getVdItem(tblPibDtlVDs, tblPibDtl.getSerial().intValue(), itemDetail.getItemId());
             BigDecimal vdValue = BigDecimal.ZERO;
