@@ -20,7 +20,7 @@ public class ItemDetail {
     private String pibId, itemCondition, brand, packageType, originCountry, itemUnit, description, type, hsCode, size,
             otherSpecification, itemCode;
     private BigDecimal insuranceValue, cif, fob, freight, unitPrice, numberUnit, initialBalance, latestBalance, netto;
-    private int numberPackage;
+    private int numberPackage, seri;
     private boolean isLartas;
 
     public BigDecimal getInsuranceValue() {
