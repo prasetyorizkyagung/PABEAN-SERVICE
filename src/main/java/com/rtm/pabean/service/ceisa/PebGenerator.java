@@ -172,7 +172,7 @@ public class PebGenerator {
 
     private List<Barang> generateBarang(String pebId, List<Document> documents, BigDecimal ndpbm) {
         List<Barang> barangs = new ArrayList<>();
-        List<ItemDetail> itemDetails = itemDetailDao.findByPebIdOrderByItemId(pebId);
+        List<ItemDetail> itemDetails = itemDetailDao.findByPebIdOrderBySeri(pebId);
         List<Entity_> owners = entityDao.findByPebIdAndEntityCode(pebId, EntityCodeEnum.PEMILIK.getCode());
         int seri = 1;
         for (ItemDetail detail : itemDetails) {
