@@ -14,7 +14,7 @@ public interface ItemDetailDao extends JpaRepository<ItemDetail, String> {
 
         List<ItemDetail> findByPebId(String pebId);
 
-        List<ItemDetail> findByPebIdOrderByItemId(String pebId);
+        List<ItemDetail> findByPebIdOrderBySeri(String pebId);
 
         long deleteByPebId(String pebId);
 
