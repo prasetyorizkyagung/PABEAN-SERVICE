@@ -13,7 +13,7 @@ public interface ItemDetailDao extends JpaRepository<ItemDetail, String> {
 
         long countByPibId(String pibId);
 
-        List<ItemDetail> findByPibIdOrderByItemId(String pibId);
+        List<ItemDetail> findByPibIdOrderBySeri(String pibId);
 
         List<ItemDetail> findByPibId(String pibId);
 
