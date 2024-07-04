@@ -92,7 +92,7 @@ public class SubmitServiceImp extends SubmitService<Outbox>  {
                             if ("OK".equals(responseMap.get("status").toString())) {
 
                                 statusDetail.setDescription("BERHASIL MASUK CEISA");
-                                statusDetail.setStatusCode(TrackingStatusEnum.ERROR_CEISA.getCode());
+                                statusDetail.setStatusCode(TrackingStatusEnum.SUCCESS_CEISA.getCode());
 
                                 outboxService.updateStatus(data.getOutboxId(), OutboxStatusEnum.DONE.getCode(), message);
 
